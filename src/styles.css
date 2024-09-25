@@ -1,0 +1,76 @@
+.parent {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  background-color: green;
+  height: 5vh;
+}
+.parent {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  background-color: green;
+  height: 5vh;
+}
+
+.bdy {
+  display: flex;
+  height: 90vh;
+}
+
+.bdy .lhs {
+  background-color: red;
+  width: 10vw;
+}
+
+.bdy main {
+  background-color: blue;
+  width: 80vw;
+}
+
+.bdy .rhs {
+  background-color: orange;
+  width: 10vw;
+}
+
+footer {
+  background-color: bisque;
+  height: 5vh;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 19vh;
+  }
+
+  .bdy {
+    flex-direction: column;
+    height: 63vh;
+    width: 97.75vw;
+    /* height: auto; Adjust height for column stacking */
+  }
+
+  .bdy .lhs,
+  .bdy main,
+  .bdy .rhs {
+    width: 97.75vw;
+    height: 21vh; /* Set height to auto for better flow */
+  }
+
+  footer {
+    height: 18vh;
+    width: 97.75vw;
+  }
+}
